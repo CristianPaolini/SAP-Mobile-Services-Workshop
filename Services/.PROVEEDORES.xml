@@ -8,9 +8,11 @@
                 </Key>
                 <Property Name="IdProveedor" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="ID Prov." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="Nombre" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Nombre" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Direccion" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Dirección" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Telefono" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="Teléfono" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Direccion" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="DirecciÃ³n" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Telefono" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="TelÃ©fono" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="Email" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Email" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Baja" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Â¿Dado de baja?" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="ToProductos" Relationship="ZOS_PRODUCTOS_DEMO_CAPV2_SRV.ProveedoresToProductos" FromRole="FromRole_ProveedoresToProductos" ToRole="ToRole_ProveedoresToProductos"/>
             </EntityType>
             <EntityType Name="Producto" sap:content-version="1">
                 <Key>
@@ -20,13 +22,29 @@
                 <Property Name="IdProducto" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="ID Producto" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="IdProveedor" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="ID Proveedor" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="Nombre" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Nombre" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Descripcion" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Descripción" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Descripcion" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="DescripciÃ³n" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="CantDisponible" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Cantidad Disponible" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="FechaCompra" Type="Edm.DateTime" Precision="0" sap:unicode="false" sap:label="Fecha Compra" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
             </EntityType>
+            <Association Name="ProveedoresToProductos" sap:content-version="1">
+                <End Type="ZOS_PRODUCTOS_DEMO_CAPV2_SRV.Proveedor" Multiplicity="1" Role="FromRole_ProveedoresToProductos"/>
+                <End Type="ZOS_PRODUCTOS_DEMO_CAPV2_SRV.Producto" Multiplicity="*" Role="ToRole_ProveedoresToProductos"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_ProveedoresToProductos">
+                        <PropertyRef Name="IdProveedor"/>
+                    </Principal>
+                    <Dependent Role="ToRole_ProveedoresToProductos">
+                        <PropertyRef Name="IdProveedor"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
             <EntityContainer Name="ZOS_PRODUCTOS_DEMO_CAPV2_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
                 <EntitySet Name="ProveedorSet" EntityType="ZOS_PRODUCTOS_DEMO_CAPV2_SRV.Proveedor" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
                 <EntitySet Name="ProductoSet" EntityType="ZOS_PRODUCTOS_DEMO_CAPV2_SRV.Producto" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <AssociationSet Name="ProveedoresToProductosSet" Association="ZOS_PRODUCTOS_DEMO_CAPV2_SRV.ProveedoresToProductos" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="ProveedorSet" Role="FromRole_ProveedoresToProductos"/>
+                    <End EntitySet="ProductoSet" Role="ToRole_ProveedoresToProductos"/>
+                </AssociationSet>
             </EntityContainer>
             <atom:link rel="self" href="http://stks4hpil.eastus2.cloudapp.azure.com:8002/sap/opu/odata/sap/ZOS_PRODUCTOS_DEMO_CAPV2_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
             <atom:link rel="latest-version" href="http://stks4hpil.eastus2.cloudapp.azure.com:8002/sap/opu/odata/sap/ZOS_PRODUCTOS_DEMO_CAPV2_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
