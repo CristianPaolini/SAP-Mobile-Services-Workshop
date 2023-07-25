@@ -1,0 +1,12 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ConfirmarEliminarProveedor"
+	},
+	"Message": "¿Desea dar de baja al proveedor {Nombre}?",
+	"Title": "Baja de Proveedor",
+	"OKCaption": "Confirmar",
+	"OnOK": "/Proveedores/Actions/CRUD/EliminarProveedor.action",
+	"CancelCaption": "Cancelar",
+	"OnCancel": "/Proveedores/Actions/CRUD/Cancelar.action"
+}

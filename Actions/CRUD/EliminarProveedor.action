@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.ODataService.DeleteEntity",
+	"ActionResult": {
+		"_Name": "EliminarProveedor"
+	},
+	"Target": {
+		"Service": "/Proveedores/Services/PROVEEDORES.service",
+		"EntitySet": "ProveedorSet",
+		"ReadLink": "{@odata.readLink}"
+	}
+}

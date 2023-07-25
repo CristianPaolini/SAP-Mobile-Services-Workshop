@@ -31,15 +31,12 @@
 						"Title": "Proveedor: {Nombre}",
 						"Subhead": "Email: {Email}",
 						"Footnote": "Teléfono: {Telefono}",
-						"Description": "Description",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "Status",
-						"SubstatusText": "Substatus",
 						"PreserveIconStackSpacing": false,
-						"AccessoryType": "none",
-						"ProgressIndicator": "inProgress",
+						"AccessoryType": "detailButton",
 						"Tags": [
 							{
+								"Color": "/Proveedores/Rules/Formatters/FormatterColorEstado.js",
 								"Text": "/Proveedores/Rules/Formatters/FormatterTextEstado.js"
 							}
 						],
@@ -56,16 +53,18 @@
 						"AvatarGrid": {
 							"Avatars": [
 								{
-									"Image": "sap-icon://customer",
+									"Image": "sap-icon://supplier",
 									"ImageText": ""
 								}
 							],
 							"ImageIsCircular": true
 						},
+						"OnAccessoryButtonPress": "/Proveedores/Actions/CRUD/ConfirmarEliminarProveedor.action",
 						"Selected": false
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
+						"LoadingIndicatorText": "",
 						"PageSize": 50
 					},
 					"HighlightSelectedItem": false,
