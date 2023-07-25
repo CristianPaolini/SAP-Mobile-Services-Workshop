@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "CrearProveedor"
+	},
+	"OnFailure": "/Proveedores/Actions/CRUD/ErrorCrear.action",
+	"OnSuccess": "/Proveedores/Actions/CRUD/ExitoCrear.action",
+	"ShowActivityIndicator": true,
+	"Target": {
+		"Service": "/Proveedores/Services/PROVEEDORES.service",
+		"EntitySet": "ProveedorSet"
+	},
+	"Properties": {
+		"Nombre": "#Page:CrearProveedor/#Control:InpNombreProv/#Value",
+		"Direccion": "#Page:CrearProveedor/#Control:InpDireccion/#Value",
+		"Telefono": "#Page:CrearProveedor/#Control:InpTelefono/#Value",
+		"Email": "#Page:CrearProveedor/#Control:InpEmailProv/#Value"
+	}
+}

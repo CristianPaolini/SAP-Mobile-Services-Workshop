@@ -5,9 +5,6 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.Image",
-					"_Name": "SectionImage0",
-					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -18,9 +15,12 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage0",
+					"Visible": true,
 					"Image": "/Proveedores/Images/Fondo.jpg",
 					"Alignment": "Center",
-					"ContentMode": "ScaleAspectFit"
+					"ContentMode": "ScaleAspectFill"
 				}
 			]
 		}
@@ -28,18 +28,5 @@
 	"_Type": "Page",
 	"_Name": "Inicio",
 	"Caption": "Inicio",
-	"PrefersLargeCaption": true,
-	"ToolBar": {
-		"Items": [
-			{
-				"_Type": "Control.Type.ToolbarItem",
-				"_Name": "ToolbarItem0",
-				"Caption": "ToolbarItem",
-				"Enabled": true,
-				"Visible": true,
-				"Clickable": true,
-				"Style": ""
-			}
-		]
-	}
+	"PrefersLargeCaption": true
 }

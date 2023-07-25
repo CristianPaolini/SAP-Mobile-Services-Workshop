@@ -1,0 +1,95 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "InpNombreProv",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Nombre",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "InpDireccion",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Dirección",
+							"KeyboardType": "Default",
+							"AlternateInput": "None",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "InpTelefono",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Teléfono",
+							"KeyboardType": "Phone",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "InpEmailProv",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Email",
+							"KeyboardType": "Email",
+							"Enabled": true
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "CrearProveedor",
+	"Caption": "Creación de Proveedor",
+	"PrefersLargeCaption": true,
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "Cancelar",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Style": "",
+				"OnPress": "/Proveedores/Actions/CRUD/Cancelar.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem1",
+				"Caption": "Guardar",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Style": "",
+				"OnPress": "/Proveedores/Actions/CRUD/CrearProveedor.action"
+			}
+		]
+	}
+}
