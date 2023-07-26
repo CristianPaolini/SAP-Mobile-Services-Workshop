@@ -3,6 +3,7 @@
 	"ActionResult": {
 		"_Name": "ExitoCrear"
 	},
+	"OnSuccess": "/Proveedores/Actions/CRUD/NavToListaProveedores.action",
 	"Message": "Creado exitosamente",
 	"OKCaption": "OK"
 }

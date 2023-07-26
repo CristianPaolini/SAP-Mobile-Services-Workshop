@@ -5,10 +5,6 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -16,8 +12,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
@@ -59,7 +53,13 @@
 							"KeyboardType": "Email",
 							"Enabled": true
 						}
-					]
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				}
 			]
 		}
@@ -83,12 +83,12 @@
 			{
 				"_Type": "Control.Type.ToolbarItem",
 				"_Name": "ToolbarItem1",
-				"Caption": "Guardar",
+				"Caption": "Crear",
 				"Enabled": true,
 				"Visible": true,
 				"Clickable": true,
 				"Style": "",
-				"OnPress": "/Proveedores/Actions/CRUD/CrearProveedor.action"
+				"OnPress": "/Proveedores/Actions/CRUD/ValidarIngresosCrearProveedor.action"
 			}
 		]
 	}

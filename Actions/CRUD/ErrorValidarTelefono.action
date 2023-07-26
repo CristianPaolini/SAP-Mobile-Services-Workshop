@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorValidarTelefono"
+	},
+	"Message": "Formato de teléfono no válido",
+	"Icon": "sap-icon://error"
+}

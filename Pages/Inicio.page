@@ -20,7 +20,7 @@
 					"Visible": true,
 					"Image": "/Proveedores/Images/Fondo.jpg",
 					"Alignment": "Center",
-					"ContentMode": "ScaleAspectFill"
+					"ContentMode": "Center"
 				}
 			]
 		}

@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ConfirmarEliminacionProv"
+	},
+	"Message": "¿Confirma la eliminación del proveedor?",
+	"Title": "Confirmar",
+	"OKCaption": "Sí",
+	"OnOK": "/Proveedores/Actions/CRUD/EliminarProveedor.action",
+	"CancelCaption": "No"
+}

@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorValidarEmail"
+	},
+	"Message": "Formato de email no válido",
+	"Icon": "sap-icon://error"
+}

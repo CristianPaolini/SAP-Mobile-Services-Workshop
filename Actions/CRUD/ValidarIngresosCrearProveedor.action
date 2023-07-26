@@ -1,0 +1,12 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"ActionResult": {
+		"_Name": "ValidarIngresosCrearProveedor"
+	},
+	"OnFailure": "/Proveedores/Actions/CRUD/ErrorValidarIngresos.action",
+	"OnSuccess": "/Proveedores/Rules/CRUD/ValidarTelYMail.js",
+	"RequiredFields": [
+		"InpDireccion",
+		"InpNombreProv"
+	]
+}
