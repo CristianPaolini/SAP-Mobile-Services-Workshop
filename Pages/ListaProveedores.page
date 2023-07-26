@@ -59,7 +59,7 @@
 							],
 							"ImageIsCircular": true
 						},
-						"OnAccessoryButtonPress": "/Proveedores/Actions/CRUD/ConfirmarEliminarProveedor.action",
+						"OnAccessoryButtonPress": "/Proveedores/Actions/CRUD/MenuProveedor.action",
 						"Selected": false
 					},
 					"DataPaging": {
@@ -100,7 +100,7 @@
 			{
 				"_Type": "Control.Type.ToolbarItem",
 				"_Name": "ToolbarItem0",
-				"Caption": "ToolbarItem",
+				"Caption": "Check for Updates",
 				"Enabled": true,
 				"Visible": true,
 				"Clickable": true,

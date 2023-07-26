@@ -1,0 +1,16 @@
+{
+	"_Type": "Action.Type.PopoverMenu",
+	"ActionResult": {
+		"_Name": "MenuProveedor"
+	},
+	"PopoverItems": [
+		{
+			"Title": "Eliminar",
+			"Icon": "sap-icon://delete",
+			"Style": "",
+			"OnPress": "/Proveedores/Actions/CRUD/ConfirmarEliminarProveedor.action",
+			"Visible": true,
+			"Enabled": true
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ExitoEliminarProveedor"
+	},
+	"Message": "Baja de Proveedor exitosa",
+	"Title": "Éxito!",
+	"OKCaption": "OK"
+}

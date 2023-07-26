@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorEliminar"
+	},
+	"Message": "Ocurrió un error al dar de baja al proveedor {#ActionResults:EliminarProveedor/error}"
+}

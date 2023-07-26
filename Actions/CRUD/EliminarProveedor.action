@@ -3,6 +3,8 @@
 	"ActionResult": {
 		"_Name": "EliminarProveedor"
 	},
+	"OnFailure": "/Proveedores/Actions/CRUD/ErrorEliminar.action",
+	"OnSuccess": "/Proveedores/Actions/CRUD/ExitoEliminarProveedor.action",
 	"Target": {
 		"Service": "/Proveedores/Services/PROVEEDORES.service",
 		"EntitySet": "ProveedorSet",
