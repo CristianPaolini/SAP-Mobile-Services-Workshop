@@ -3,5 +3,5 @@
 	"ActionResult": {
 		"_Name": "ErrorCrear"
 	},
-	"Message": "Error: {#ActionResults:CrearProveedor/error}"
+	"Message": "Ocurrió un error al crear el proveedor: {#ActionResults:CrearProveedor/error}"
 }

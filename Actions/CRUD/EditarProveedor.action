@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "EditarProveedor"
+	},
+	"OnFailure": "/Proveedores/Actions/CRUD/ErrorEditarProveedor.action",
+	"OnSuccess": "/Proveedores/Actions/CRUD/ExitoEditarProveedor.action",
+	"Target": {
+		"Service": "/Proveedores/Services/PROVEEDORES.service",
+		"EntitySet": "ProveedorSet",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties": {
+		"Nombre": "#Page:EditarProveedor/#Control:InpNombreProvEdit/#Value",
+		"Direccion": "#Page:EditarProveedor/#Control:InpDireccionEdit/#Value",
+		"Telefono": "#Page:EditarProveedor/#Control:InpTelefonoEdit/#Value",
+		"Email": "#Page:EditarProveedor/#Control:InpEmailProvEdit/#Value"
+	}
+}

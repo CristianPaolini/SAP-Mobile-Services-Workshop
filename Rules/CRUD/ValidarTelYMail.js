@@ -4,18 +4,18 @@
  */
 export default function ValidarTelYMail(clientAPI) {
     try {
-        let oTelefono = clientAPI.evaluateTargetPath('#Page:CrearProveedor/#Control:InpTelefono/#Value').getValue();
+        let oTelefono = clientAPI.evaluateTargetPath('#Page:CrearProveedor/#Control:InpTelefono/#Value'),
+            oEmail = clientAPI.evaluateTargetPath('#Page:CrearProveedor/#Control:InpEmailProv/#Value');
         const regexCelular = /^(15|11)\d{8}$/,
             regexTelefono = /^(011)?\d{8}$/;
 
-        let telefonoValido = oTelefono.match(regexCelular) || oTelefono.match(regexTelefono);
+            let telefonoValido = (oTelefono && (oTelefono.match(regexCelular) || oTelefono.match(regexTelefono)));
 
         if (telefonoValido) {
             // Teléfono válido, ahora validar email
-            let oEmail = clientAPI.evaluateTargetPath('#Page:CrearProveedor/#Control:InpEmail/#Value').getValue();
             const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-            let emailValido = oEmail.match(regexEmail);
+            let emailValido = oEmail && oEmail.match(regexEmail);
 
             if (emailValido) {
                 // Teléfono y email son válidos, ejecutar acción para crear proveedor

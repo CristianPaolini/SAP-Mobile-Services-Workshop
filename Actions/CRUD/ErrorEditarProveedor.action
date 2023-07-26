@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ErrorEditarProveedor"
+	},
+	"Message": "Ocurrió un error al editar el proveedor: {#ActionResults:EditarProveedor/error}"
+}

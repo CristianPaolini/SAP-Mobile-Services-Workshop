@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ExitoEditarProveedor"
+	},
+	"Message": "Proveedor modificado exitosamente",
+	"OKCaption": "OK",
+	"OnOK": "/Proveedores/Actions/ClosePage.action"
+}
