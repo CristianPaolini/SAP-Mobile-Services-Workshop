@@ -19,8 +19,8 @@
 					"_Name": "SectionImage0",
 					"Visible": true,
 					"Image": "/Proveedores/Images/Fondo.jpg",
-					"Alignment": "Center",
-					"ContentMode": "Center"
+					"Alignment": "center",
+					"ContentMode": "ScaleAspectFit"
 				}
 			]
 		}

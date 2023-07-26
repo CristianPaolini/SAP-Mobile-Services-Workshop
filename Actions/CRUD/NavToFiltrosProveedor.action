@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Filter",
+	"ActionResult": {
+		"_Name": "NavToFiltrosProveedor"
+	},
+	"Filterable": "#Page:ListaProveedores/#Control:SectionedTable0",
+	"PageToOpen": "/Proveedores/Pages/FiltrosProveedores.page"
+}

@@ -1,0 +1,128 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FiltroNombreProv",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Nombre",
+							"Enabled": true
+						}
+					],
+					"Header": {
+						"_Name": "SectionHeader0",
+						"AccessoryType": "none",
+						"UseTopPadding": true,
+						"Caption": "Filtros",
+						"Items": [
+							{
+								"_Type": "SectionHeaderItem.Type.Icon",
+								"_Name": "SectionHeaderItemTypeIcon0",
+								"Visible": true,
+								"Position": "Right",
+								"Icon": "sap-icon://add-filter"
+							},
+							{
+								"_Type": "SectionHeaderItem.Type.Label",
+								"_Name": "SectionHeaderItemTypeLabel0",
+								"Visible": true,
+								"Position": "Left",
+								"Title": "Filtros"
+							}
+						]
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Sorter",
+							"_Name": "Sorter",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"AllowEmptySelection": false,
+							"SortByItems": [
+								{
+									"DisplayValue": "Nombre Asc",
+									"ReturnValue": "Nombre asc"
+								},
+								{
+									"DisplayValue": "Nombre Desc",
+									"ReturnValue": "Nombre desc"
+								}
+							]
+						}
+					],
+					"Header": {
+						"_Name": "SectionHeader1",
+						"AccessoryType": "none",
+						"UseTopPadding": true,
+						"Caption": "Ordenamiento"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "FiltrosProveedores",
+	"Caption": "Ingresar Filtros",
+	"PrefersLargeCaption": true,
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem1",
+				"Caption": "Filtrar",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Style": "",
+				"OnPress": "/Proveedores/Actions/CRUD/CompletarFiltros.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "Cancelar",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Style": "",
+				"OnPress": "/Proveedores/Actions/CRUD/Cancelar.action"
+			}
+		]
+	},
+	"Result": "/Proveedores/Rules/CRUD/ObtenerFiltros.js"
+}
