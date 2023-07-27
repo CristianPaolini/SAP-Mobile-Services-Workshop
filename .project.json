@@ -8,24 +8,7 @@
 	"CF": {
 		"Target": "https://api.cf.us10-001.hana.ondemand.com",
 		"Organization": "62f646a4-1105-431c-be94-8eb60987f539",
-		"Space": "01a7ca38-9975-461d-9835-bb6f53d83fae",
-		"Deploy": {
-			"Description": "",
-			"WebClient": {
-				"Runtime": "production",
-				"URL": "https://mdk-webclient-runtime.cfapps.us10.hana.ondemand.com/runtime/"
-			},
-			"Destination": [
-				{
-					"CF": "PROVEEDORES",
-					"MDK": "PROVEEDORES",
-					"URL": ""
-				}
-			],
-			"Name": "ns.Proveedores",
-			"Version": "1.0.0",
-			"AppRouter": "standalone"
-		}
+		"Space": "01a7ca38-9975-461d-9835-bb6f53d83fae"
 	},
 	"MobileService": {
 		"Type": "standard",

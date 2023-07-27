@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ProveedorNoExiste"
+	},
+	"Message": "No se encontró un proveedor con ese nombre",
+	"Icon": "sap-icon://warning",
+	"Animated": true
+}

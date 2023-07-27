@@ -3,5 +3,6 @@
 	"ActionResult": {
 		"_Name": "ErrorValidarIngresos"
 	},
-	"Message": "Los campos Nombre y Dirección son obligatorios"
+	"Message": "Los campos Nombre y Dirección son obligatorios",
+	"Icon": "sap-icon://error"
 }

@@ -3,5 +3,6 @@
 	"ActionResult": {
 		"_Name": "ErrorCrear"
 	},
-	"Message": "Ocurrió un error al crear el proveedor: {#ActionResults:CrearProveedor/error}"
+	"Message": "Ocurrió un error al crear el proveedor: {#ActionResults:CrearProveedor/error}",
+	"Icon": "sap-icon://error"
 }

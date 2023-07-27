@@ -3,5 +3,6 @@
 	"ActionResult": {
 		"_Name": "ErrorEliminar"
 	},
-	"Message": "Ocurrió un error al dar de baja al proveedor {#ActionResults:EliminarProveedor/error}"
+	"Message": "Ocurrió un error al dar de baja al proveedor {#ActionResults:EliminarProveedor/error}",
+	"Icon": "sap-icon://error"
 }

@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "NoIngresoNombre"
+	},
+	"Message": "Debe ingresar un nombre de proveedor para realizar la búsqueda!",
+	"Icon": "sap-icon://warning"
+}

@@ -1,0 +1,35 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Datos Proveedor",
+					"Image": "sap-icon://supplier",
+					"PageToOpen": "/Proveedores/Pages/DatosProveedor.page",
+					"_Name": "TabItem0"
+				}
+			],
+			"Position": "Bottom",
+			"TabStripType": "Normal"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "MenuDetalleProveedor",
+	"Caption": "Detalle del Proveedor",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://refresh",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

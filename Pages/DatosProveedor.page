@@ -1,0 +1,87 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"DetailImage": "sap-icon://supplier",
+						"DetailImageIsCircular": false,
+						"Tags": [
+							{
+								"Color": "/Proveedores/Rules/Formatters/FormatterColorEstado.js",
+								"Text": "/Proveedores/Rules/Formatters/FormatterTextEstado.js"
+							}
+						],
+						"BodyText": "Mail contacto: {Email}",
+						"HeadlineText": "Proveedor: {Nombre}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectCollection",
+					"Target": {
+						"Service": "/Proveedores/Services/PROVEEDORES.service",
+						"EntitySet": "{@odata.readLink}/ToProductosSet"
+					},
+					"_Name": "SectionObjectCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"ObjectCell": {
+						"Title": "Productos",
+						"Tags": [
+							{
+								"Color": "Blue",
+								"Text": "{Nombre}"
+							}
+						],
+						"Subhead": "Fecha Compra: $(DT,{FechaCompra},'es-419-AR','GMT-3',{format:'short'})",
+						"DisplayDescriptionInMobile": true,
+						"AccessoryType": "none",
+						"PreserveIconStackSpacing": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://product",
+									"ImageText": ""
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						}
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DatosProveedor",
+	"Caption": "Datos Proveedor",
+	"PrefersLargeCaption": true
+}
