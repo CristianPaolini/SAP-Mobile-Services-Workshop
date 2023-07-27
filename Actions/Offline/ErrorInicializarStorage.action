@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorInicializarStorage"
+	},
+	"Message": "Ocurrió un error al inicializar el modo offline: {#ActionResults:InicializarStorage/error}"
+}

@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorSubirCambios"
+	},
+	"Message": "Error al guardar los cambios realizados en el modo offline: {#ActionResults:SubirCambios/error}",
+	"Duration": 2
+}

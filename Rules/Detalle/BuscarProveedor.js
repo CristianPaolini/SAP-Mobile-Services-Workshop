@@ -7,7 +7,7 @@ export default function BuscarProveedor(clientAPI) {
         let pageProxy = clientAPI.getPageProxy();
         let oNombreProv = clientAPI.evaluateTargetPath('#Page:BuscarProveedor/#Control:InpNombreProvBusq/#Value');
         if (!oNombreProv) {
-            alert("Debe ingresar un nombre de proveedor para realizar la búsqueda!");
+            clientAPI.executeAction('/Proveedores/Actions/Detalle/NoIngresoNombre.action');
             return;
         }
         oNombreProv = oNombreProv.toString().trim();

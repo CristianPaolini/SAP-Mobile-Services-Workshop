@@ -35,7 +35,8 @@
 					"_Type": "Section.Type.ObjectCollection",
 					"Target": {
 						"Service": "/Proveedores/Services/PROVEEDORES.service",
-						"EntitySet": "{@odata.readLink}/ToProductosSet"
+						"EntitySet": "{@odata.readLink}/ToProductos",
+						"QueryOptions": "$filter=IdProveedor eq '{IdProveedor}'"
 					},
 					"_Name": "SectionObjectCollection0",
 					"Visible": true,
@@ -47,11 +48,14 @@
 						"PageSize": 50
 					},
 					"ObjectCell": {
-						"Title": "Productos",
 						"Tags": [
 							{
 								"Color": "Blue",
 								"Text": "{Nombre}"
+							},
+							{
+								"Color": "/Proveedores/Rules/Formatters/FormatterColorCantidad.js",
+								"Text": "Stock: {CantDisponible}"
 							}
 						],
 						"Subhead": "Fecha Compra: $(DT,{FechaCompra},'es-419-AR','GMT-3',{format:'short'})",

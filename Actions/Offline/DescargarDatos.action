@@ -1,0 +1,23 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "DescargarDatos"
+	},
+	"OnFailure": "/Proveedores/Actions/Offline/ErrorDescargarDatos.action",
+	"OnSuccess": "/Proveedores/Actions/Offline/ExitoInicializarOffline.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Descargando datos...",
+	"Service": "/Proveedores/Services/PROVEEDORES.service",
+	"DefiningRequests": [
+		{
+			"Name": "ProveedorSet",
+			"Query": "ProveedorSet?$expand=ToProductos",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "ProductoSet",
+			"Query": "ProductoSet",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

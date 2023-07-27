@@ -29,6 +29,42 @@
 							"Visible": true,
 							"TextAlignment": "left",
 							"Styles": {}
+						},
+						{
+							"Title": "Modo Online",
+							"Image": "sap-icon://connected",
+							"OnPress": "/Proveedores/Actions/Service/InitializeOnline.action",
+							"_Name": "SideDrawerSection0Item2",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Modo Offline",
+							"Image": "sap-icon://disconnected",
+							"OnPress": "/Proveedores/Actions/Offline/InicializarStorage.action",
+							"_Name": "SideDrawerSection0Item3",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Sincronizar Cambios",
+							"Image": "sap-icon://synchronize",
+							"OnPress": "/Proveedores/Actions/Offline/SubirCambios.action",
+							"_Name": "SideDrawerSection0Item4",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Salir",
+							"Image": "sap-icon://visits",
+							"OnPress": "/Proveedores/Actions/LogoutMessage.action",
+							"_Name": "SideDrawerSection0Item5",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
 						}
 					],
 					"Visible": true,

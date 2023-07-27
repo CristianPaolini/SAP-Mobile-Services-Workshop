@@ -1,0 +1,22 @@
+{
+	"_Type": "Action.Type.OfflineOData.Initialize",
+	"ActionResult": {
+		"_Name": "InicializarStorage"
+	},
+	"OnFailure": "/Proveedores/Actions/Offline/ErrorInicializarStorage.action",
+	"OnSuccess": "/Proveedores/Actions/Offline/DescargarDatos.action",
+	"ShowActivityIndicator": true,
+	"Service": "/Proveedores/Services/PROVEEDORES.service",
+	"DefiningRequests": [
+		{
+			"Name": "ProveedorSet",
+			"Query": "ProveedorSet?$expand=ToProductos",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "ProductoSet",
+			"Query": "ProductoSet",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

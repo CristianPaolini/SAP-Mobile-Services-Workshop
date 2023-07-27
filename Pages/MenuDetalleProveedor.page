@@ -27,7 +27,8 @@
 				"Icon": "sap-icon://refresh",
 				"Position": "Right",
 				"IsIconCircular": false,
-				"Visible": true
+				"Visible": true,
+				"OnPress": "/Proveedores/Rules/Detalle/RefreshDatosProductos.js"
 			}
 		],
 		"_Name": "ActionBar1"

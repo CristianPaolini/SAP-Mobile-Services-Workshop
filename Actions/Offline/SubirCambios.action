@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "SubirCambios"
+	},
+	"OnSuccess": "/Proveedores/Actions/Offline/LimpiarStorage.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Guardando cambios...",
+	"Service": "/Proveedores/Services/PROVEEDORES.service"
+}
