@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorValidarIngresosProducto"
+	},
+	"Message": "Los campos Nombre y Descripción son obligatorios",
+	"Icon": "sap-icon://error"
+}

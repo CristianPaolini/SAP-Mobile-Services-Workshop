@@ -1,0 +1,96 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "InpNombreProducto",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Nombre",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "InpDescripcionProducto",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Descripción",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "InpCantidadDisponible",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Cantidad",
+							"KeyboardType": "Number",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "DpFechaCompra",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Fecha de Compra",
+							"Mode": "Datetime"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"DesignTimeTarget": {
+		"Service": "/Proveedores/Services/PROVEEDORES.service",
+		"EntitySet": "ProductoSet"
+	},
+	"_Type": "Page",
+	"_Name": "CrearProducto",
+	"Caption": "Crear Producto",
+	"PrefersLargeCaption": true,
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem1",
+				"Caption": "Cancelar",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Style": "",
+				"OnPress": "/Proveedores/Actions/CRUD/Cancelar.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "Añadir Producto",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Style": "",
+				"OnPress": "/Proveedores/Actions/CRUD/ValidarIngresosCrearProducto.action"
+			}
+		]
+	}
+}

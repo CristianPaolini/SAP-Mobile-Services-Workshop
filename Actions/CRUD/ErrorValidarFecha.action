@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorValidarFecha"
+	},
+	"Message": "Formato de fecha no válido",
+	"Icon": "sap-icon://error"
+}

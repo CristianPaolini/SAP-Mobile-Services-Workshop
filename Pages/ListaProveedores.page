@@ -59,6 +59,7 @@
 							],
 							"ImageIsCircular": true
 						},
+						"OnPress": "/Proveedores/Actions/Detalle/NavToDetalle.action",
 						"OnAccessoryButtonPress": "/Proveedores/Actions/CRUD/MenuProveedor.action",
 						"Selected": false
 					},

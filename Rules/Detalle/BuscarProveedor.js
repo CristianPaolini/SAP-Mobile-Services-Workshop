@@ -27,7 +27,7 @@ export default function BuscarProveedor(clientAPI) {
                 oClientData.Email = oData.getItem(0).Email;
                 oClientData.Datos = oData.getItem(0); // esto es válido, pero algo como lo del comentario de debajo no es posible: 
                 pageProxy.redraw();                  // oClientData = {Nombre: "Name", Direccion: "Address 123", etc.}
-                clientAPI.executeAction('/Proveedores/Actions/Detalle/NavToDetalle.action');
+                // clientAPI.executeAction('/Proveedores/Actions/Detalle/NavToDetalle.action');
             } else {
                 clientAPI.executeAction('/Proveedores/Actions/Detalle/ProveedorNoExiste.action');
             }

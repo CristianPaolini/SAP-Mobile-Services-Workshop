@@ -22,6 +22,15 @@
 	"ActionBar": {
 		"Items": [
 			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"Icon": "sap-icon://add-product",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Proveedores/Actions/CRUD/NavToCrearProducto.action"
+			},
+			{
 				"_Name": "ActionBarItem0",
 				"Caption": "Item",
 				"Icon": "sap-icon://refresh",

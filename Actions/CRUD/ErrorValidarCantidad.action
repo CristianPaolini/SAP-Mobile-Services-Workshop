@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorValidarCantidad"
+	},
+	"Message": "La cantidad debe ser mayor a 0",
+	"Icon": "sap-icon://error"
+}

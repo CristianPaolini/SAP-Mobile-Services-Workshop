@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorCrearProd"
+	},
+	"Message": "Ocurrió un error al crear el producto: {#ActionResults:CrearProducto/error}"
+}

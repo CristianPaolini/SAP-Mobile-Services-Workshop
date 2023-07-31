@@ -1,0 +1,12 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"ActionResult": {
+		"_Name": "ValidarIngresosCrearProducto"
+	},
+	"OnFailure": "/Proveedores/Actions/CRUD/ErrorValidarIngresosProducto.action",
+	"OnSuccess": "/Proveedores/Rules/CRUD/ValidarCantYFecha.js",
+	"RequiredFields": [
+		"InpNombreProducto",
+		"InpDescripcionProducto"
+	]
+}

@@ -4,6 +4,7 @@
 			"Header": {
 				"Headline": "Proveedores",
 				"SubHeadline": "Gestión de Proveedores y Productos",
+				"Icon": "sap-icon://supplier",
 				"Alignment": "left",
 				"IconIsCircular": false,
 				"DisableIconText": false
@@ -18,8 +19,7 @@
 							"PageToOpen": "/Proveedores/Pages/Inicio.page",
 							"_Name": "SideDrawerSection0Item0",
 							"Visible": true,
-							"TextAlignment": "left",
-							"Styles": {}
+							"TextAlignment": "left"
 						},
 						{
 							"Title": "Proveedores",
@@ -27,8 +27,7 @@
 							"PageToOpen": "/Proveedores/Pages/ListaProveedores.page",
 							"_Name": "SideDrawerSection0Item1",
 							"Visible": true,
-							"TextAlignment": "left",
-							"Styles": {}
+							"TextAlignment": "left"
 						},
 						{
 							"Title": "Modo Online",
@@ -36,8 +35,7 @@
 							"OnPress": "/Proveedores/Actions/Service/InitializeOnline.action",
 							"_Name": "SideDrawerSection0Item2",
 							"Visible": true,
-							"TextAlignment": "left",
-							"Styles": {}
+							"TextAlignment": "left"
 						},
 						{
 							"Title": "Modo Offline",
@@ -45,8 +43,7 @@
 							"OnPress": "/Proveedores/Actions/Offline/InicializarStorage.action",
 							"_Name": "SideDrawerSection0Item3",
 							"Visible": true,
-							"TextAlignment": "left",
-							"Styles": {}
+							"TextAlignment": "left"
 						},
 						{
 							"Title": "Sincronizar Cambios",
@@ -54,8 +51,7 @@
 							"OnPress": "/Proveedores/Actions/Offline/SubirCambios.action",
 							"_Name": "SideDrawerSection0Item4",
 							"Visible": true,
-							"TextAlignment": "left",
-							"Styles": {}
+							"TextAlignment": "left"
 						},
 						{
 							"Title": "Salir",
@@ -63,8 +59,7 @@
 							"OnPress": "/Proveedores/Actions/LogoutMessage.action",
 							"_Name": "SideDrawerSection0Item5",
 							"Visible": true,
-							"TextAlignment": "left",
-							"Styles": {}
+							"TextAlignment": "left"
 						}
 					],
 					"Visible": true,

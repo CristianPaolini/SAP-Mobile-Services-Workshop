@@ -3,5 +3,6 @@
 	"ActionResult": {
 		"_Name": "NavToEditarProveedor"
 	},
-	"PageToOpen": "/Proveedores/Pages/EditarProveedor.page"
+	"PageToOpen": "/Proveedores/Pages/EditarProveedor.page",
+	"NavigationType": "Inner"
 }

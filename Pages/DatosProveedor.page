@@ -6,6 +6,7 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
+						"Footnote": "Dirección: {Direccion}",
 						"DetailImage": "sap-icon://supplier",
 						"DetailImageIsCircular": false,
 						"Tags": [
@@ -48,6 +49,7 @@
 						"PageSize": 50
 					},
 					"ObjectCell": {
+						"Title": "{Descripcion}",
 						"Tags": [
 							{
 								"Color": "Blue",
@@ -55,7 +57,7 @@
 							},
 							{
 								"Color": "/Proveedores/Rules/Formatters/FormatterColorCantidad.js",
-								"Text": "Stock: {CantDisponible}"
+								"Text": "Cantidad: {CantDisponible}"
 							}
 						],
 						"Subhead": "Fecha Compra: $(DT,{FechaCompra},'es-419-AR','GMT-3',{format:'short'})",

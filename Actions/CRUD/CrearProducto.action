@@ -1,0 +1,26 @@
+{
+	"_Type": "Action.Type.ODataService.CreateRelatedEntity",
+	"ActionResult": {
+		"_Name": "CrearProducto"
+	},
+	"OnFailure": "/Proveedores/Actions/CRUD/ErrorCrearProd.action",
+	"OnSuccess": "/Proveedores/Actions/CRUD/ExitoCrearProd.action",
+	"Target": {
+		"Service": "/Proveedores/Services/PROVEEDORES.service",
+		"EntitySet": "ProductoSet"
+	},
+	"ParentLink": {
+		"Target": {
+			"EntitySet": "ProveedorSet",
+			"ReadLink": "{@odata.readLink}"
+		},
+		"Property": "ToProductos"
+	},
+	"Properties": {
+		"IdProveedor": "{IdProveedor}",
+		"Nombre": "#Page:CrearProducto/#Control:InpNombreProducto/#Value",
+		"Descripcion": "#Page:CrearProducto/#Control:InpDescripcionProducto/#Value",
+		"CantDisponible": "#Page:CrearProducto/#Control:InpCantidadDisponible/#Value",
+		"FechaCompra": "#Page:CrearProducto/#Control:DpFechaCompra/#Value"
+	}
+}

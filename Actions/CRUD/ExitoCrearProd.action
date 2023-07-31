@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ExitoCrearProd"
+	},
+	"Message": "Creado exitosamente",
+	"OKCaption": "OK",
+	"OnOK": "/Proveedores/Actions/Detalle/NavToDetalle.action"
+}
