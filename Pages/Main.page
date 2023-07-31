@@ -19,7 +19,8 @@
 							"PageToOpen": "/Proveedores/Pages/Inicio.page",
 							"_Name": "SideDrawerSection0Item0",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {}
 						},
 						{
 							"Title": "Proveedores",
@@ -27,7 +28,8 @@
 							"PageToOpen": "/Proveedores/Pages/ListaProveedores.page",
 							"_Name": "SideDrawerSection0Item1",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {}
 						},
 						{
 							"Title": "Modo Online",
@@ -35,7 +37,8 @@
 							"OnPress": "/Proveedores/Actions/Service/InitializeOnline.action",
 							"_Name": "SideDrawerSection0Item2",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {}
 						},
 						{
 							"Title": "Modo Offline",
@@ -43,7 +46,8 @@
 							"OnPress": "/Proveedores/Actions/Offline/InicializarStorage.action",
 							"_Name": "SideDrawerSection0Item3",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {}
 						},
 						{
 							"Title": "Sincronizar Cambios",
@@ -51,15 +55,26 @@
 							"OnPress": "/Proveedores/Actions/Offline/SubirCambios.action",
 							"_Name": "SideDrawerSection0Item4",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Chequear Conexión",
+							"Image": "sap-icon://connected",
+							"OnPress": "/Proveedores/Rules/ChequearConexion.js",
+							"_Name": "SideDrawerSection0Item5",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
 						},
 						{
 							"Title": "Salir",
 							"Image": "sap-icon://visits",
 							"OnPress": "/Proveedores/Actions/LogoutMessage.action",
-							"_Name": "SideDrawerSection0Item5",
+							"_Name": "SideDrawerSection0Item6",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {}
 						}
 					],
 					"Visible": true,

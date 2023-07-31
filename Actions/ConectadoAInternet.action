@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ConectadoAInternet"
+	},
+	"Message": "Ud. está conectado a Internet",
+	"Title": "Resultado",
+	"OKCaption": "OK"
+}
